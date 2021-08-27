@@ -17,6 +17,8 @@ public class BridgeTrackablePrefabModifier : MonoBehaviour
     Text distanceIndicatorText;
     [SerializeField]
     Canvas distanceIndicatorCanvas;
+    [SerializeField]
+    Material bridgeMat;
 
     Transform destTr;
     public void SetDest(Transform tr)=>destTr = tr;
@@ -63,6 +65,14 @@ public class BridgeTrackablePrefabModifier : MonoBehaviour
         distanceIndicatorCanvas.transform.LookAt(Camera.main.transform);
         distanceIndicatorCanvas.transform.Rotate(new Vector3(0f, 180f, 0f));
         distanceIndicatorText.text = distance.ToString();
+
+        float bridgeWaveRange = -0.25f * distance + 0.35f;
+        if (bridgeWaveRange > 0.35f) bridgeWaveRange = 0.35f;
+        if (bridgeWaveRange < 0.1f) bridgeWaveRange = 0.1f;
+
+
+        bridgeMat.SetFloat("BridgeWaveRange", bridgeWaveRange);
+        bridgeMat.SetFloat("ModelY", Mathf.Sin(Time.time));
     }
 
 }

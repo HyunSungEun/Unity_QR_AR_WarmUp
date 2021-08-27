@@ -35,3 +35,23 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: QR_09
     m_Texture: {fileID: 2800000, guid: 00bc522e67a3f8b47bd937a7b201a68d, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4763899784970942624
+      m_GuidHigh: 13455392366215321239
+    m_SerializedTextureGuid:
+      m_GuidLow: 17484364347507563298
+      m_GuidHigh: 17771404418119691370
+    m_Size: {x: 0.08, y: 0.08}
+    m_SpecifySize: 1
+    m_Name: BridgeQR_05
+    m_Texture: {fileID: 2800000, guid: e8b15b22f0bcf2a46aecd44d29b6a0f6, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5574840614551899020
+      m_GuidHigh: 17027825223773164672
+    m_SerializedTextureGuid:
+      m_GuidLow: 12363703431710436662
+      m_GuidHigh: 4070774374640033801
+    m_Size: {x: 0.08, y: 0.08}
+    m_SpecifySize: 1
+    m_Name: BridgeQR_06
+    m_Texture: {fileID: 2800000, guid: f360ed36b2c3ab9409a02ed1b94b7e38, type: 3}
