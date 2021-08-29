@@ -20,8 +20,9 @@ public class TrackaablePrefabSpecIndicator : MonoBehaviour
     {
         transform.LookAt(Camera.main.transform);
         transform.Rotate(new Vector3(0f, 180f, 0f));
-        wp.text = string.Format("({0:0.00#},{0:0.00#},{0:0.00#})",  entity.position.x, entity.position.y, entity.position.z);
-        s.text = string.Format("({0:0.00#},{0:0.00#},{0:0.00#})", entity.localScale .x, entity.localScale.y, entity.localScale.z);
-        r.text = string.Format("({0:0.00#},{0:0.00#},{0:0.00#})", entity.rotation.eulerAngles .x, entity.rotation.eulerAngles.y, entity.rotation.eulerAngles.z);
+      //  wp.text = entity.position.ToString();
+        wp.text = string.Format("({0:N2},{1:N2},{2:N2})",  entity.position.x, entity.position.y, entity.position.z);
+        s.text = string.Format("({0:N2},{1:N2},{2:N2})", entity.localScale .x, entity.localScale.y, entity.localScale.z);
+        r.text = string.Format("({0:N2},{1:N2},{2:N2})", entity.rotation.eulerAngles .x, entity.rotation.eulerAngles.y, entity.rotation.eulerAngles.z);
     }
 }
